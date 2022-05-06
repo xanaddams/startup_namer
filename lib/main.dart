@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Alexanders Name Generator',
       theme: ThemeData(
         appBarTheme: const AppBarTheme(
@@ -20,6 +21,11 @@ class MyApp extends StatelessWidget {
         ),
       ),
       home: const RandomWords(),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {},
+        backgroundColor: Colors.blue,
+        child: const Icon(Icons.navigation),
+      ),
     );
   }
 }
